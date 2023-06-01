@@ -19,4 +19,11 @@ public class MaintenanceMonitorTest {
         assertEquals(expRes, res);
     }
 
+    @Test
+    void resetTest1(){
+        String res = mon.reset();
+        String expRes = "ok";
+        assertEquals(expRes, res);
+    }
+
 }
