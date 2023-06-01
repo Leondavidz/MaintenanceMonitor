@@ -19,5 +19,9 @@ public class MaintenanceMonitorController {
         mon.set(message);
         return "ok";
     }
-
+    @RequestMapping("/api/reset")
+    public String reset() {
+        mon.reset();
+        return "ok";
+    }
 }

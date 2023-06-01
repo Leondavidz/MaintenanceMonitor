@@ -12,6 +12,9 @@ public class MaintenanceMonitor {
         }
         return message;
     }
-
+    public String reset() {
+        message = "Everything operates as expected";
+        return "ok";
+    }
 
 }
