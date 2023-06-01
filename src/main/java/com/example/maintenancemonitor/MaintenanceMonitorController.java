@@ -13,4 +13,11 @@ public class MaintenanceMonitorController {
     public String deliver(){
         return mon.deliver();
     }
+
+    @RequestMapping("/api/set")
+    public String set(@RequestParam String message) {
+        mon.set(message);
+        return "ok";
+    }
+
 }

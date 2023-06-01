@@ -6,4 +6,12 @@ public class MaintenanceMonitor {
     public String deliver() {
         return this.message;
     }
+    public String set(String set) {
+        if (set != null && !set.trim().equals("")) {
+            message = set;
+        }
+        return message;
+    }
+
+
 }
